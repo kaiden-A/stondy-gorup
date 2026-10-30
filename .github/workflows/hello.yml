@@ -54,7 +54,7 @@ jobs:
           username: ${{ secrets.DIGITAL_OCEAN_USERNAME }}
           key: ${{ secrets.DIGITAL_OCEAN_KEY }}
           script: |
-            cd docker/kaiden
+            cd docker/mirul
             docker compose pull pipeline-api
             docker compose up pipeline-api -d
             
